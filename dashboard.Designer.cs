@@ -44,6 +44,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -119,7 +120,7 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(38, 365);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(90, 29);
+            this.label12.Size = new System.Drawing.Size(72, 23);
             this.label12.TabIndex = 17;
             this.label12.Text = "Reports";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -397,6 +398,8 @@
             // 
             // dashboard
             // 
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(983, 456);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTopbar);

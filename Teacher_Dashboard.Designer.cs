@@ -40,6 +40,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teacher_Dashboard));
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -337,6 +338,7 @@
             // 
             // Teacher_Dashboard
             // 
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(983, 456);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTopbar);

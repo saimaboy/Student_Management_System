@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Time_Table));
             this.dgvTimeTable = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
@@ -37,26 +38,30 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.LightGreen;
             this.btnSave.Location = new System.Drawing.Point(799, 62);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 40);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save Timetable";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnLoad
             // 
+            this.btnLoad.BackColor = System.Drawing.Color.Yellow;
             this.btnLoad.Location = new System.Drawing.Point(799, 108);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(120, 40);
             this.btnLoad.TabIndex = 2;
             this.btnLoad.Text = "Load Timetable";
-            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // Time_Table
             // 
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(940, 350);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnSave);

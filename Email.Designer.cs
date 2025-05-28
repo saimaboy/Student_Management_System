@@ -23,6 +23,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Email));
             this.txtRecipient = new System.Windows.Forms.TextBox();
             this.txtSubject = new System.Windows.Forms.TextBox();
             this.cmbSubjectType = new System.Windows.Forms.ComboBox();
@@ -75,12 +76,13 @@
             // 
             // btnSend
             // 
+            this.btnSend.BackColor = System.Drawing.Color.LightGreen;
             this.btnSend.Location = new System.Drawing.Point(150, 270);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(100, 40);
             this.btnSend.TabIndex = 4;
             this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // dgvSentEmails
@@ -140,6 +142,8 @@
             // 
             // Email
             // 
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(650, 550);
             this.Controls.Add(this.lblSentEmails);
             this.Controls.Add(this.lblSubjectType);

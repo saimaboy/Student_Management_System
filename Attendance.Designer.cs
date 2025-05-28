@@ -18,6 +18,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Attendance));
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.btnAttend = new System.Windows.Forms.Button();
             this.btnNotAttend = new System.Windows.Forms.Button();
@@ -42,26 +43,30 @@
             // 
             // btnAttend
             // 
+            this.btnAttend.BackColor = System.Drawing.Color.LightGreen;
             this.btnAttend.Location = new System.Drawing.Point(630, 50);
             this.btnAttend.Name = "btnAttend";
             this.btnAttend.Size = new System.Drawing.Size(120, 40);
             this.btnAttend.TabIndex = 1;
             this.btnAttend.Text = "Attend";
-            this.btnAttend.UseVisualStyleBackColor = true;
+            this.btnAttend.UseVisualStyleBackColor = false;
             this.btnAttend.Click += new System.EventHandler(this.btnAttend_Click);
             // 
             // btnNotAttend
             // 
+            this.btnNotAttend.BackColor = System.Drawing.Color.Red;
             this.btnNotAttend.Location = new System.Drawing.Point(630, 96);
             this.btnNotAttend.Name = "btnNotAttend";
             this.btnNotAttend.Size = new System.Drawing.Size(120, 40);
             this.btnNotAttend.TabIndex = 2;
             this.btnNotAttend.Text = "Not Attend";
-            this.btnNotAttend.UseVisualStyleBackColor = true;
+            this.btnNotAttend.UseVisualStyleBackColor = false;
             this.btnNotAttend.Click += new System.EventHandler(this.btnNotAttend_Click);
             // 
             // Attendance
             // 
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(770, 380);
             this.Controls.Add(this.btnNotAttend);
             this.Controls.Add(this.btnAttend);

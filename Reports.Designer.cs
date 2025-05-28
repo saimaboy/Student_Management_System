@@ -21,6 +21,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reports));
             this.btnAttendanceReport = new System.Windows.Forms.Button();
             this.btnMarksReport = new System.Windows.Forms.Button();
             this.btnParentsReport = new System.Windows.Forms.Button();
@@ -28,9 +29,7 @@
             this.btnRewardsReport = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-
             this.SuspendLayout();
-
             // 
             // btnAttendanceReport
             // 
@@ -41,7 +40,6 @@
             this.btnAttendanceReport.Text = "Export Attendance Report";
             this.btnAttendanceReport.UseVisualStyleBackColor = true;
             this.btnAttendanceReport.Click += new System.EventHandler(this.btnAttendanceReport_Click);
-
             // 
             // btnMarksReport
             // 
@@ -52,7 +50,6 @@
             this.btnMarksReport.Text = "Export Full Marks Report";
             this.btnMarksReport.UseVisualStyleBackColor = true;
             this.btnMarksReport.Click += new System.EventHandler(this.btnMarksReport_Click);
-
             // 
             // btnParentsReport
             // 
@@ -63,7 +60,6 @@
             this.btnParentsReport.Text = "Export Parents Report";
             this.btnParentsReport.UseVisualStyleBackColor = true;
             this.btnParentsReport.Click += new System.EventHandler(this.btnParentsReport_Click);
-
             // 
             // btnStudentsReport
             // 
@@ -74,7 +70,6 @@
             this.btnStudentsReport.Text = "Export Students Report";
             this.btnStudentsReport.UseVisualStyleBackColor = true;
             this.btnStudentsReport.Click += new System.EventHandler(this.btnStudentsReport_Click);
-
             // 
             // btnRewardsReport
             // 
@@ -85,7 +80,6 @@
             this.btnRewardsReport.Text = "Export Rewards Report";
             this.btnRewardsReport.UseVisualStyleBackColor = true;
             this.btnRewardsReport.Click += new System.EventHandler(this.btnRewardsReport_Click);
-
             // 
             // btnBack
             // 
@@ -96,10 +90,11 @@
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-
             // 
-            // Reports form
+            // Reports
             // 
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(280, 400);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRewardsReport);
@@ -107,10 +102,11 @@
             this.Controls.Add(this.btnParentsReport);
             this.Controls.Add(this.btnMarksReport);
             this.Controls.Add(this.btnAttendanceReport);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Reports";
             this.Text = "Reports Export";
-
             this.ResumeLayout(false);
+
         }
 
         #endregion

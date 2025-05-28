@@ -19,6 +19,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Marks));
             this.dgvMarks = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -44,36 +45,41 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.Yellow;
             this.btnSave.Location = new System.Drawing.Point(923, 62);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 40);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save Marks";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnRefresh
             // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Red;
             this.btnRefresh.Location = new System.Drawing.Point(923, 110);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(120, 40);
             this.btnRefresh.TabIndex = 2;
             this.btnRefresh.Text = "Refresh Data";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnSendReport
             // 
+            this.btnSendReport.BackColor = System.Drawing.Color.LightGreen;
             this.btnSendReport.Location = new System.Drawing.Point(923, 160);
             this.btnSendReport.Name = "btnSendReport";
             this.btnSendReport.Size = new System.Drawing.Size(120, 40);
             this.btnSendReport.TabIndex = 3;
             this.btnSendReport.Text = "Send Report";
-            this.btnSendReport.UseVisualStyleBackColor = true;
+            this.btnSendReport.UseVisualStyleBackColor = false;
             this.btnSendReport.Click += new System.EventHandler(this.btnSendReport_Click);
             // 
             // Marks
             // 
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1055, 430);
             this.Controls.Add(this.btnSendReport);
             this.Controls.Add(this.btnRefresh);
